@@ -15,3 +15,8 @@ strom["age"] += 1
 strom["energy"] = min(100, strom["energy"] + 2)
 
 print("Po jednom kroku:", strom)
+# Dalších pět kroků simulace
+for krok in range(5):
+    strom["age"] += 1
+    strom["energy"] = min(100, strom["energy"] + 2)
+    print("Věk:", strom["age"], "Energie:", strom["energy"])
