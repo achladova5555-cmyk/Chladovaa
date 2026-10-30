@@ -27,10 +27,16 @@ class Tree:
         self.energy = energy
         self.age = 0
 
+    def live_one_step(self):
+        self.age += 1
+        self.energy = min(100, self.energy + 2)
 
-# Vytvoření dvou samostatných stromů
+
 strom_1 = Tree(1, 30)
 strom_2 = Tree(2, 50)
 
-print("První strom:", strom_1.energy)
-print("Druhý strom:", strom_2.energy)
+# Jeden krok provede pouze první strom
+strom_1.live_one_step()
+
+print("První strom:", strom_1.age, strom_1.energy)
+print("Druhý strom:", strom_2.age, strom_2.energy)
