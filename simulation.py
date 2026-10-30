@@ -35,9 +35,12 @@ class Tree:
 strom_1 = Tree(1, 30)
 strom_2 = Tree(2, 50)
 
-# Jeden krok provede pouze první strom
-strom_1.live_one_step()
-strom_2.live_one_step()
+# Seznam všech stromů
+stromy = [strom_1, strom_2]
+
+# Každý strom v seznamu provede jeden krok
+for strom in stromy:
+    strom.live_one_step()
 
 print("První strom:", strom_1.age, strom_1.energy)
 print("Druhý strom:", strom_2.age, strom_2.energy)
