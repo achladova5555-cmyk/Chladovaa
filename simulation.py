@@ -37,6 +37,7 @@ strom_2 = Tree(2, 50)
 
 # Jeden krok provede pouze první strom
 strom_1.live_one_step()
+strom_2.live_one_step()
 
 print("První strom:", strom_1.age, strom_1.energy)
 print("Druhý strom:", strom_2.age, strom_2.energy)
