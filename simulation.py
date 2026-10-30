@@ -37,7 +37,7 @@ strom_2 = Tree(2, 50)
 strom_3 = Tree(3, 70)
 
 # Seznam všech stromů
-stromy = [strom_1, strom_2]
+stromy = [strom_1, strom_2, strom_3]
 
 # Každý strom v seznamu provede jeden krok
 for strom in stromy:
@@ -45,3 +45,4 @@ for strom in stromy:
 
 print("První strom:", strom_1.age, strom_1.energy)
 print("Druhý strom:", strom_2.age, strom_2.energy)
+print("Třetí strom:", strom_3.age, strom_3.energy)
