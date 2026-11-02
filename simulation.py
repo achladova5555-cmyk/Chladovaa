@@ -6,13 +6,12 @@ class Tree:
         self.x = x
         self.y = y
 
-    def live_one_step(self):
+       def live_one_step(self):
         self.age += 1
         self.energy = min(100, self.energy + 2)
-        
-            def take_damage(self, amount):
-        self.energy = max(0, self.energy - amount)
 
+    def take_damage(self, amount):
+        self.energy = max(0, self.energy - amount)
 
 strom_1 = Tree(1, 30, 2, 3)
 strom_2 = Tree(2, 50, 5, 5)
