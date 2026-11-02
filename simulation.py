@@ -9,6 +9,9 @@ class Tree:
     def live_one_step(self):
         self.age += 1
         self.energy = min(100, self.energy + 2)
+        
+            def take_damage(self, amount):
+        self.energy = max(0, self.energy - amount)
 
 
 strom_1 = Tree(1, 30, 2, 3)
@@ -22,6 +25,8 @@ stromy = [strom_1, strom_2, strom_3]
 for krok in range(5):  
     for strom in stromy:    
        strom.live_one_step()
+        # Zkušební útok na první strom
+strom_1.take_damage(5)
 
 for strom in stromy:
     print(
