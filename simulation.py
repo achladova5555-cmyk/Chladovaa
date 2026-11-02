@@ -6,7 +6,7 @@ class Tree:
         self.x = x
         self.y = y
 
-       def live_one_step(self):
+    def live_one_step(self):
         self.age += 1
         self.energy = min(100, self.energy + 2)
 
