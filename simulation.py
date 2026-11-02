@@ -1,26 +1,3 @@
-# Jednoduchá simulace lesa
-
-strom = {
-    "id": 1,
-    "x": 5,
-    "y": 5,
-    "age": 0,
-    "energy": 50,
-    "alive": True,
-}
-
-print(strom)
-# Jeden krok simulace
-strom["age"] += 1
-strom["energy"] = min(100, strom["energy"] + 2)
-
-print("Po jednom kroku:", strom)
-# Dalších pět kroků simulace
-for krok in range(5):
-    strom["age"] += 1
-    strom["energy"] = min(100, strom["energy"] + 2)
-    print("Věk:", strom["age"], "Energie:", strom["energy"])
-    # Společný předpis pro nové stromy
 class Tree:
     def __init__(self, id, energy, x, y):
         self.id = id
@@ -42,21 +19,9 @@ strom_3 = Tree(3, 70, 8, 2)
 stromy = [strom_1, strom_2, strom_3]
 
 # Pět kroků pro všechny stromy
-for krok in range(5):
-
-
-
-    
-    for strom in stromy:
-
-
-
-
-
-
-
-        
-        strom.live_one_step()
+for krok in range(5):  
+    for strom in stromy:    
+       strom.live_one_step()
 
 for strom in stromy:
     print(
