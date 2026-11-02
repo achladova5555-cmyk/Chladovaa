@@ -58,6 +58,10 @@ for krok in range(5):
         
         strom.live_one_step()
 
-print("První strom:", strom_1.age, strom_1.energy)
-print("Druhý strom:", strom_2.age, strom_2.energy)
-print("Třetí strom:", strom_3.age, strom_3.energy)
+for strom in stromy:
+    print(
+        "Strom:", strom.id,
+        "Poloha:", strom.x, strom.y,
+        "Věk:", strom.age,
+        "Energie:", strom.energy
+    )
